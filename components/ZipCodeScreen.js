@@ -21,13 +21,13 @@ const _keyExtractor = item => item.code
 export default class WeatherScreen extends React.Component {
     static navigationOptions = ({ navigation }) => {
         return {
-            headerTitle: (<Text>Choose a zip code</Text>),
+            headerTitle: (<Text style={styles.font}> Choose a zip code</Text>),
         }
     }
     render() {
         const { navigate } = this.props.navigation;
         return (
-            <View>
+            <View style={styles.app}>
                 <FlatList
                     data={availableZipItems}
                     keyExtractor={_keyExtractor}
@@ -38,9 +38,17 @@ export default class WeatherScreen extends React.Component {
     }
 }
 const styles = StyleSheet.create({
+    app: {
+        backgroundColor: "#ADD8E6"
+    },
+    font: {
+        color: "#8B4513",
+        fontSize: 20
+    },
     zipItem: {
         flexDirection: 'row',
-        margin: 20
+        margin: 20,
+
     },
     zipPlace: {
         flex: 2

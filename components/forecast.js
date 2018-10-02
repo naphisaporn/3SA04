@@ -18,25 +18,25 @@ export default class Forecast extends React.Component {
 const styles = StyleSheet.create({
     tempContainer: {
         display: "flex",
-        flexDirection: "row"
+        flexDirection: "row",
     },
     fontMain: {
-        color: 'white',
+        color: '#FFB6C1',
         paddingTop: 25,
         fontSize: 32
     },
     fontDescription: {
-        color: 'white',
+        color: '#FFB6C1',
         paddingTop: 25,
         fontSize: 18
     },
     fontTemp: {
-        color: 'white',
+        color: '#E9967A',
         paddingTop: 25,
         fontSize: 32
     },
     fontC: {
-        color: 'white',
+        color: '#E9967A',
         paddingTop: 35,
         fontSize: 18
     }

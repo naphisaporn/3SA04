@@ -67,12 +67,13 @@ const styles = StyleSheet.create({
     app: {
         display: "flex",
         flexDirection: "column",
+        justifyContent: 'flex-end',
         alignItems: "center",
-        backgroundColor: "rgba(0,0,0,0.8)"
+        backgroundColor: "rgba(0,60,60,0.5)"
     },
     font: {
-        color: "white",
+        color: "#EEDD82",
         paddingTop: 25,
-        fontSize: 18
+        fontSize: 20
     }
 });
