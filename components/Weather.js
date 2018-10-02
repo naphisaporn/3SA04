@@ -48,11 +48,12 @@ export default class Weather extends React.Component {
     render() {
         return (
             <View style={styles.container}>
-                <ImageBackground source={require("../bg.jpeg")} style={styles.backdrop}>
+                <ImageBackground source={require("../bg2.jpeg")} style={styles.backdrop}>
                     <View style={styles.app}>
                         <Text style={styles.font}>Zip code is {this.props.zipCode}.</Text>
                         <Forecast {...this.state.forecast} />
-                        <Text style={styles.font}>Naphisaporn Phakphrommin 5835512098.</Text>
+                        <Text style={styles.font}>Naphisaporn Phakphrommin </Text>
+                        <Text style={styles.font}>5835512098 </Text>
                     </View>
                 </ImageBackground>
             </View>
